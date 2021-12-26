@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Array {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int [][]a=new int[6][6];
+        int x = 0,y=0;
+        for(int i=1;i< a.length;i++)
+        {
+            for(int j=1;j< a.length;j++)
+            {
+                a[i][j]=sc.nextInt();
+                if(a[i][j]==1)
+                {
+                     x=i;
+                     y=j;
+                    break;
+                }
+
+            }
+
+
+        }
+        int r=Math.abs(3-x)+Math.abs(3-y);
+        System.out.println(r);
+
+    }
+}
