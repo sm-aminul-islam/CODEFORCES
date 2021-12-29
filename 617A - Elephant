@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x=sc.nextInt();
+        int n=x/5;
+        if(x%5==0){
+            System.out.println(n);
+        }
+        else {
+            System.out.println(n + 1);
+        }
+    }
+}
